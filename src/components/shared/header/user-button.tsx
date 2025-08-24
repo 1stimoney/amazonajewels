@@ -21,7 +21,7 @@ export default async function UserButton() {
   const session = (await auth()) as Session | null
   if (!session)
     return (
-      <Link href='/signin'>
+      <Link href='/sign-in'>
         <Button>Sign In</Button>
       </Link>
     )
